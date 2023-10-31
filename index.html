@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Quiz Application</title>
+</head>
+<body>
+    <div class="quiz-app">
+        <div class="quiz-info">
+            <div class="category">Difficulty: <select class="diff-sel" name="difficulty" id="difficulty">
+                <option class="opt" value="easy">Easy</option>
+                <option class="opt" value="medium">Medium</option>
+                <option  class="opt" value="hard">Hard</option>
+            </select> </div>
+        
+            <div class="cur-index">Quiz Counter: <span></span></div>
+        </div>
+        <div class="quiz-area">
+        </div>
+        <div class="answers-area">
+        </div>
+        <button class="submit-btn">Submit The Answer</button>
+        <div class="footer">
+            <div class="bullets-container"></div>
+            <div class="result">
+                <span class="rank"></span> You answered <span class="right"></span> of <span class="q-count"></span> questions.
+            </div>
+        </div>
+    </div>
+    <audio src="media/success.mp3" id= "success" preload="auto"></audio>
+    <audio src="media/fail.mp3" id= "fail" preload="auto"></audio>
+    <script src="/js/script.js"></script>
+</body>
+</html>
